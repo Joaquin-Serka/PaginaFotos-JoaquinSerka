@@ -5,44 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>PhotoLens</title>
 </head>
 
 <body>
-    <div class="container">
-        <header class="header">
-            <div class="header1">
-                <h1 class="header_titulo">PhotoLens</h1>
-            </div>
-        </header>
-        <div class="navegador">
-            <nav>
-                <ul>
-                    <li><a class="header_navegador_link" href="#">home</a></li>
-                    <li><a class="header_navegador_link" href="./Pages/galeria.html">Glaeria</a></li>
-                    <li><a class="header_navegador_link" href="./Pages/contacto.html">Contacto</a></li>
-                </ul>
+    <div class="container1"> 
+        <div class="header">
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-success " href="">PhotoLens</a>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <li><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+                            <li><a class="nav-link" href="./Pages/galeria.html">Galeria</a></li>
+                            <li><a class="nav-link" href="./Pages/contacto.html">Contacto</a></li>
+                        </div>
+                    </div>
+                </div>
             </nav>
         </div>
         <main class="main_index">
-            <section class="main_section">
-                <div class="galeria_container">
-                    <div class="galeria_item">
-                        <div class="image">
-                            <a href="calle.html">
-                                <img class="imagen-g" src="https://source.unsplash.com/1000x900/?street" alt="">
-                            </a>
-                        </div>
-                        <div class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea neque repudiandae necessitatibus velit voluptas labore in modi voluptatibus. cumque nostrum sequi asperiores aspernatur cupiditate aut fugit mollitia dolor, hic enim.</div>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://source.unsplash.com/1600x900/?street" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <p>Somos una empresa que se dedica a la venta de fotos, en formato digital y a rollo 35mm.</p>
                     </div>
-                </div> 
-            </section>
+                  </div>
+                </div>
+            </div>
         </main>
-        
         <footer class="footer">
             <h2 class="footer_h2">Seguinos en nuestras redes sociales</h2>
             <i class="fa-brands fa-instagram"></i>
         </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -12,35 +12,20 @@
     box-sizing:border-box;
 }
 
-.container{
+.container1{
     height: 100vh;
     width: 100%;
     display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: 4% auto 4% ;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto 5% ;
     grid-template-areas: 
-    'header header'
-    'nav main'
-    'footer footer';
+    'header'
+    'main'
+    'footer';
 }
 
 .header{
-    width: 100%;
-    background-color: chartreuse;
     grid-area: header;
-    text-align: center;
-    font-family: 'Alegreya SC', serif;
-    font-size: 15px;
-}
-
-.navegador{
-    background-color: aqua;
-    grid-area: nav;
-    font-family: 'Bitter', serif;
-    font-size: 15px;
-    font-weight: bold;
-    padding: 4px;
-    
 }
 
 .main_index{
@@ -59,14 +44,12 @@
     font-size: 15px;
 }
 
+
 .main2{
+    max-width: 100%;
     padding: 5px;
+    height: 100%;
     grid-area: main;
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-auto-rows: repeat(6,1fr);
-    grid-gap:10px;
-    grid-auto-flow: dense;
 }
 
 .galeria_item{
@@ -82,7 +65,7 @@
     border-radius: 5px;
 }
 
-.galeria_item .image img{
+.galeria_item .image .a img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -91,7 +74,7 @@
     transition: .5s ease-in-out;
 }
 
-.galeria_item:hover .image img{
+.galeria_item:hover .image .a img{
     transform: scale(1.1);
 }
 
@@ -175,146 +158,38 @@
 }
 
 .main_5{
+    border: 5px;
+    background-size: cover;
     grid-area: main;
-    position: relative;
+    text-align: center;
     padding: 5px;
-    min-height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-auto-rows: repeat(6,1fr);
-    grid-gap:10px;
-    grid-auto-flow: dense;
 }
 
 .main5_nav{
     grid-area: nav2;
-    padding: 5px;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-auto-rows: 100 px;
-    grid-gap:10px;
-    grid-auto-flow: dense;
+    
 }
 
-.formulario{
-    position:relative;
-    width: 100%;
-    height: 100%;
-    display:flex;   
-    justify-content: center;
-    align-items: center;
-    padding: 20px 100px;
-}
-.container::after{
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-repeat: no-repeat;
-    background-position: center;
-    filter:blur(50px);
-    z-index: -1;
-}
-.contact-box{
-    width: 35%;
-    display:grid;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: #fff;
 
-}
-.right{
-    padding: 25px 40px;
-
-}
-h2{
-    position: relative;
-    padding: 0 0 10px;
-    margin-bottom: 10px;
-}
-h2::after{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 4px;
-    width: 50px;
- 
-    background-color:#000000 ;
-
-}
-.field{
-    width: 100%;
-    border: 2px solid rgba(0, 0, 0, 0.184);
-    outline:none;
-    background-color: #68a363;
-    padding: 0.5rem 1rem;
-    font-size: 1.1rem;
-    margin-bottom: 22px;
-    transition: all 0.3s ease-in-out;
-}
-.field:hover{
-    background-color: rgba(0,0,0,0.1);
-
-}
-textarea{
-    min-height: 150px;
-}
-.btn{
-    width: 100%;
-    padding: 0.5rem 1rem;
-    background-color: #36212c;
-    color: #fff;
-    font-size: 1.1rem;
-    border: none;
-    outline:none;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-}
-.btn:hover{
-    background-color: #743d5a;
-}
-.field:focus{
-    border: 2px solid #e4ceda;
-    background-color: #fff;
-}
 
 @media screen and (max-width: 500px){
-    .main_5{
-        grid-template-columns: repeat(4,1fr);
-        top: 2%;
-    }
     
-    .container{
-        grid-template-columns: 14% auto;
-    }
-    
-    .imagen-g{
-        max-width: 400px;
-    }
-    .contact-box{
-        width: 200%;
-    }
-    
-    .header{
-        font-size: 10px;
-    }
-    .footer{
-        font-size: 10px;
-    }
 }
 
 .container2{
-    min-height: 100vh;
+    height: 100vh;
     width: 100%;
     display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: 3% 16% auto 4% ;
+    grid-template-columns: auto;
+    grid-template-rows: auto 130px auto 4% ;
     grid-template-areas: 
-    'header header'
-    'nav nav2'
-    'nav main'
-    'footer footer';
+    'header'
+    'nav2'
+    'main'
+    'footer';
 }
+
+.main_3{
+    grid-area: main;
+}
+
